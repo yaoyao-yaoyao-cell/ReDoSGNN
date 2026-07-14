@@ -1,0 +1,11 @@
+dgl
+networkx
+numpy
+scikit-learn
+torch
+tqdm
+
+# Optional baseline dependencies:
+# ogb
+# torch-geometric
+# torch-scatter
