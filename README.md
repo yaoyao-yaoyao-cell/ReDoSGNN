@@ -41,9 +41,6 @@ by your system, then install the remaining dependencies:
 python -m pip install -r requirements.txt
 ```
 
-The optional models under `rmgnn/models/baselines/` additionally require
-PyTorch Geometric, `torch-scatter`, and OGB. They are not needed for RMGNN.
-
 ## Data preparation
 
 Preprocess an existing TU-style HRG dataset:
@@ -51,15 +48,6 @@ Preprocess an existing TU-style HRG dataset:
 ```bash
 python preprocess.py --data Corpus_HRG
 ```
-
-Convert raw OutputAST files and preprocess them in one command:
-
-```bash
-python preprocess.py --data Corpus --convert --overwrite
-```
-
-Use `--data all` for all four paper datasets. For a quick pipeline check, use
-`--sample-size`, `--max-instances-per-graph`, and `--skip-teacher`.
 
 ## Training and evaluation
 
